@@ -1,59 +1,66 @@
 @charset "UTF-8";
 
-body{
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-nav div#Google{
-    display: block;
-    position: absolute;
-    top: 100px;
-    left: 450px;
-}
-div#header {
-    text-align: right;
-}
-div#botoes{
-    display: block;
-    position: absolute;
-    top: 270px;
-    left: 570px;
-}
-div#botoes a{
-    background: rgb(228, 225, 225);
-    padding: 10px 5px 10px;
+*,
+body,
+input{
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
     text-decoration: none;
-    color: black;
-    margin: 10px;
-    border-radius: 5px;
+    color: rgba(0,0,0,0.87);   
 }
-input#iPesq{
-    border-radius: 20px;
-    border: 1px solid gainsboro;
-    height: 35px;
-    width: 475px;
-    margin: 10px;
-}
-footer{
-    display: inline-block;
-    position: absolute;
-    top: 100%;
-    left: 0;
+/* Menu */
+.menu {
+    height: 48px;
+    float: right;
+    margin-top: 10px;
+    padding: 0px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 
 }
-footer span#direita-pe{
-    display: inline-block;
-    position: relative;
-    left: 100%;
+.menu__right {
+    display: flex;
+    align-items: center;
+
 }
-footer span#esquerda-pe{
-    display: inline-block;
-    position: relative;
-    right: 100%;
+.menu__right a + a {
+    padding: 0px 15px;
 }
-footer span#pais{
-    text-align: left;
-    display: block;
-    position: relative;
-    left: 0%;
+.menu__right img {
+    opacity: .55;
+
+    cursor: pointer;
 }
+.menu__right img:hover {
+    opacity: 1;
+}
+.menu__right--images {
+}
+.menu__right--login {
+    line-height: 28px;
+    padding: 0px 12px;
+    margin: 0px 0px 0px 15px;
+
+    border-radius: 2px;
+
+    color: #ffffff;
+    font-weight: bolder;
+
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    
+}
+.menu__right--login:hover {
+    text-decoration: none;
+    box-shadow: 0px .2px 2px #222;
+}
+.menu__right--gmail:hover,
+.menu__right--images:hover {
+    text-decoration: underline;
+}
+
