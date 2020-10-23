@@ -1,0 +1,27 @@
+.footers {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+.footer {
+    display: flex;
+    line-height: 40px;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4ed;
+
+    justify-content: space-between;
+    padding: 0px 27px;
+}
+.footer a,
+.footer span {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #5f6368;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+a + a {
+    padding: 0px 0px 0px 27px;
+}
